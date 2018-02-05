@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: ubuntu-14.04-XXL-1325-0ccc9ce
     steps:
       - checkout
       - run:
@@ -10,7 +10,7 @@ jobs:
           command: sudo source build.sh
   test:
     docker:
-      - image: debian:stretch
+      - image: ubuntu-14.04-XXL-1325-0ccc9ce
     steps:
       - checkout
       - run:
