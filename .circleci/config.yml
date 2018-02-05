@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Build
-          command: source build.sh
+          command: sudo source build.sh
   test:
     docker:
       - image: debian:stretch
